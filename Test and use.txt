@@ -1,0 +1,22 @@
+Routes of contacts
+
+Test and use: Postman, MongoBD and Express of nodeJS.
+
+Register contact: http://localhost:3001/api/contact/registerContact
+Validations: If the notebook is full, If the contact exist, If data is completed.
+Example Body Json: { "name": "Pepito4", "landline" : "25567655", "cellPhone": "31567577555" }
+
+Update/Edit contact: http://localhost:3001/api/contact/updateContact
+Validations: If the contact exist, If data is completed.
+Example Body Json on a contact exist: { "name": "Pepito4", "landline" : "0000", "cellPhone": "0000" }
+
+List contact by name: http://localhost:3001/api/contact/listContact/Pepito
+Validations: If name is type.
+
+List all contact : http://localhost:3001/api/contact/listContact
+
+Existing contacthttp://localhost:3001/api/contact/existingContact
+Example Body Json: { "name": "Pepito23" }
+
+Delete contact by name: http://localhost:3001/api/contact/deleteContact/Pepito
+Validations: If the contact exist.
